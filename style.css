@@ -1,4 +1,136 @@
-/* আগের সব স্টাইল ঠিক থাকবে, শুধু নিচে এগুলো যোগ করুন */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ffdde1, #ee9ca7, #ffafbd, #ffc3a0);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    z-index: 10;
+}
+
+.gif-container img {
+    width: 250px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #d63384;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.5);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #6a1b9a;
+    margin-bottom: 2rem;
+}
+
+.main-btn {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    background: white;
+    color: #ff4d6d;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(214, 51, 132, 0.3);
+    transition: all 0.3s ease;
+}
+
+.main-btn:hover {
+    transform: scale(1.1);
+    background: #ff4d6d;
+    color: white;
+}
+
+/* Input Styling */
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ff4d6d;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+/* Wish Card Styling */
+.wish-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.wish-card img {
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    background: #ff4d6d;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(255, 77, 109, 0.5);
+}
+
+.credits {
+    position: fixed;
+    bottom: 20px;
+    font-size: 0.8rem;
+    color: #6a1b9a;
+    text-align: center;
+}
+
+.credits span { font-weight: bold; color: #ff4d6d; }
+.credits a { color: #d63384; text-decoration: none; }
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.floating {
+    position: fixed;
+    pointer-events: none;
+    animation: float 4s ease-in-out infinite;
+}
 
 .radio-label {
     cursor: pointer;
@@ -21,4 +153,4 @@
 .copy-btn {
     background: #ff4d6d !important;
     color: white !important;
-}
+    }
