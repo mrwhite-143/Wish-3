@@ -1,0 +1,24 @@
+/* আগের সব স্টাইল ঠিক থাকবে, শুধু নিচে এগুলো যোগ করুন */
+
+.radio-label {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #6a1b9a;
+}
+
+.radio-label input {
+    accent-color: #ff4d6d;
+    transform: scale(1.2);
+    margin-right: 5px;
+}
+
+#link-result input {
+    background: white;
+    font-weight: bold;
+    color: #6a1b9a;
+}
+
+.copy-btn {
+    background: #ff4d6d !important;
+    color: white !important;
+}
